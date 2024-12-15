@@ -175,7 +175,7 @@ if ((event.body.toLowerCase() == "satting karva de") || (event.body.toLowerCase(
      return api.sendMessage("SAD KYU HAI JANEMAN SATTING BHAG GAYI KYA TERI LAT MARKA❤️", threadID);
    };
 
-   if ((event.body.toLowerCase() == "good afternoon") || (event.body.toLowerCase() == "good afternoon everyone") || (event.body.toLowerCase() == "gf") || (event.body.toLowerCase() == "good after noon")) {
+   if ((event.body.toLowerCase() == "good afternoon") || (event.body.toLowerCase() == "good afternoon everyone") || (event.body.toLowerCase() == "⛲⛲⛲⛲⛲⛲⛲⛲⛲⛲") || (event.body.toLowerCase() == "good after noon")) {
      return api.sendMessage( "dofer ho gya aja khana khilati hu apne hato se bna ke bhuk lgi hogi mere janu ko😥",threadID);
 
 
