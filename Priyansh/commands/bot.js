@@ -38,7 +38,7 @@ if ((event.body.toLowerCase() == "koi h kya") || (event.body.toLowerCase() == "k
        return api.sendMessage("Aww🥰 Yes My LoVe", threadID);
      };
 
-     if ((event.body.toLowerCase() == @Basanti Bot") || (event.body.toLowerCase() == "basanti")) {
+     if ((event.body.toLowerCase() == "@Basanti Bot") || (event.body.toLowerCase() == "basanti")) {
        return api.sendMessage("KHON KAR DUNGI TERAA", threadID);
      };
 
