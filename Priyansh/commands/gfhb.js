@@ -12,7 +12,7 @@ module.exports.config = {
 
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
-	if (event.body.indexOf("GM")==0 || event.body.indexOf("gm")==0 || event.body.indexOf("Good morning")==0 || event.body.indexOf("GOOD MORNING")==0) {
+	if (event.body.indexOf("gf")==0 || event.body.indexOf("girlfriend")==0 || event.body.indexOf("GF")==0 || event.body.indexOf("satting")==0) {
 		var msg = {
 				body: "😁 LE gf Ab dobara gf gf mat karna🤨😁",
 				attachment: fs.createReadStream(__dirname + `/noprefix/gf.jpg`)
