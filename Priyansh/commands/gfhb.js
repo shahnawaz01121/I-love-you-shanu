@@ -15,7 +15,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	if (event.body.indexOf("gf")==0 || event.body.indexOf("girlfriend")==0 || event.body.indexOf("GF")==0 || event.body.indexOf("satting")==0) {
 		var msg = {
 				body: "😁 LE gf Ab dobara gf gf mat karna🤨😁",
-				attachment: fs.createReadStream(__dirname + `/noprefix/gf.jpg`)
+				attachment: fs.createReadStream(__dirname + `/noprefix/kalup.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🎃", event.messageID, (err) => {}, true)
