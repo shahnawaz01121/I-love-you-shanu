@@ -20,7 +20,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 react.includes("love") ||
 react.includes("Love")) {
 		var msg = {
-				body: `🤬🤬MAI TERA KHOON KARDUNGI🤬🤬`,attachment: fs.createReadStream(__dirname + `/noprefix/love.mp3`)
+				body: `💋LOVE YOU 2 MERI JAAN😘💋💋`,attachment: fs.createReadStream(__dirname + `/noprefix/love.mp4`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🙈", event.messageID, (err) => {}, true)
