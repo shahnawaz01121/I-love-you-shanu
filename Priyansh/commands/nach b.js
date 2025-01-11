@@ -21,7 +21,7 @@ react.includes("nachh")) {
         body: `MAI TO NACHUNGI🙈😒😒👈`,attachment: fs.createReadStream(__dirname + `/noprefix/nach.mp4`)
       }
       api.sendMessage(msg, threadID, messageID);
-    api.setMessageReaction("👙", event.messageID, (err) => {}, true)
+    api.setMessageReaction("💃", event.messageID, (err) => {}, true)
     }
   }
   module.exports.run = async ({ api, event, Currencies, args, utils, client, global }) => {
