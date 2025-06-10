@@ -1,6 +1,6 @@
 const fs = require("fs");
 module.exports.config = {
-  name: "gn",
+  name: "welcome",
     version: "2.1.1",
   hasPermssion: 0,
   credits: "PRINCE RAJPUT", 
@@ -13,12 +13,12 @@ module.exports.handleEvent = async ({ api, event, Users, Currencies, args, utils
   var name = await Users.getNameUser(event.senderID);
   var { threadID, messageID } = event;
   let react = event.body.toLowerCase();
-  if(react.includes("soja") ||
-     react.includes("gn") ||
-     react.includes("night") ||
-react.includes("Gnn")) {
+  if(react.includes("welcome") ||
+     react.includes("Welcome") ||
+     react.includes("wlcm") ||
+react.includes("welcoMe")) {
     var msg = {
-        body: `😂Kumbhkaran😂👈`,attachment: fs.createReadStream(__dirname + `/noprefix/gn.mp3`)
+        body: `★━━━━━━━━━━━━━★😍𝐖𝐞𝐥𝐜𝐨𝐦𝐞 𝐡𝐨 𝐠𝐲𝐚 𝐦𝐞𝐫𝐢 𝐣𝐚𝐚𝐧😍★━━━━━━━━━━━━━★`,attachment: fs.createReadStream(__dirname + `/noprefix/welcome.gif`)
       }
       api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("😈", event.messageID, (err) => {}, true)
