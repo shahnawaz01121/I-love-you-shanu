@@ -3,7 +3,7 @@
 /////// WARNING => JO CREDIT NAME CHANGE KREGA USKA ID BAN KAR DIYA JAYEGA + THIS BOT IS MADE BT PREM BABU
 const fs = require("fs");
 module.exports.config = {
-	name: "KISS-YOU",
+	name: "birthday",
     version: "1.1.1",
 	hasPermssion: 0,
 	credits: "PREM BABU", ////////@prem-babu3608
@@ -15,12 +15,12 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("kiss") ||
-     react.includes("kiss you") || react.includes("umma") || react.includes("KISS DO") ||
-react.includes("kiss me") ||
-react.includes("KISS YOU")) {
+	if(react.includes("BIrthday") ||
+     react.includes("Birthday") || react.includes("BirthDAy") || react.includes("BirTHday") ||
+react.includes("Birthday") ||
+react.includes("birthdaY")) {
 		var msg = {
-				body: `𝐊𝐈𝐒𝐒 𝐘𝐎𝐔 𝐓𝐎 𝐃𝐀𝐑𝐋𝐈𝐍𝐆 𝐉𝐀𝐋𝐃𝐈 𝐉𝐀𝐋𝐃𝐈 𝐊𝐀𝐑 𝐋𝐎 𝐊𝐎𝐈 𝐃𝐀𝐊𝐇 𝐋𝐄𝐆𝐀 😁 💋🙊💞`,attachment: fs.createReadStream(__dirname + `/noprefix/kissu.gif`)
+				body: `★━━━━━━━━━━━━━★🎈𝐇𝐚𝐩𝐩𝐲 𝐛𝐢𝐫𝐭𝐡𝐝𝐚𝐲 𝐦𝐞𝐫𝐢 𝐣𝐚𝐚𝐧🎈★━━━━━━━━━━━━━★`,attachment: fs.createReadStream(__dirname + `/noprefix/birthday.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("💋", event.messageID, (err) => {}, true)
