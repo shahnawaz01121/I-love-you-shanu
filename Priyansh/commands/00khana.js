@@ -3,7 +3,7 @@
 /////// WARNING => JO CREDIT NAME CHANGE KREGA USKA ID BAN KAR DIYA JAYEGA + THIS BOT IS MADE BT PREM BABU
 const fs = require("fs");
 module.exports.config = {
-	name: "haha",
+	name: "Khana",
     version: "1.1.1",
 	hasPermssion: 0,
 	credits: "PREM BABU", //////@prem-babu3608
@@ -15,12 +15,12 @@ module.exports.config = {
 module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
-	if(react.includes("haha") ||
-     react.includes("😹") || react.includes("😹😹😹") || react.includes("खाना") ||
-react.includes("🤣🤣🤣") ||
-react.includes("😸")) {
+	if(react.includes("Khana") ||
+     react.includes("khana") || react.includes("KHAna") || react.includes("खाना") ||
+react.includes("kHana") ||
+react.includes("khAna")) {
 		var msg = {
-				body: `🙂 Haste Haste Pet Dard Hone Laga🤣🥰🙈😘 🙂`,attachment: fs.createReadStream(__dirname + `/noprefix/hasna.gif`)
+				body: `★━━━━━━━━━━━━━★🌶️𝐊𝐡𝐚 𝐋𝐨 𝐌𝐞𝐫𝐢 𝐉𝐚𝐚𝐧🌶️ ★━━━━━━━━━━━━━★`,attachment: fs.createReadStream(__dirname + `/noprefix/khana.gif`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🍲", event.messageID, (err) => {}, true)
