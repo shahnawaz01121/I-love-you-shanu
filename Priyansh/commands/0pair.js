@@ -1,6 +1,6 @@
 
 module.exports.config = {
-  name: "pair5",
+  name: "pair",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
@@ -101,7 +101,7 @@ module.exports.run = async function ({ args, Users, Threads, api, event, Currenc
   fs.writeFileSync(pathImg, imageBuffer);
   fs.removeSync(pathAvt1);
   fs.removeSync(pathAvt2);
-  return api.sendMessage({ body: `Congratulations, ${name1} successfully paired with ${name2}\nThe odds are ${tile}%`,
+  return api.sendMessage({ body: `❤️╔═══❖••° °••❖═══╗\n\n  ❤️‍🔥 𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐏𝐚𝐢𝐫𝐢𝐧𝐠❤️‍🔥\n\n╚═══❖••° °••❖═══╝❤️\n\n  ❤️✶⊶⊷⊷❍⊶⊷⊷✶❤️, ${name1} successfully paired with ${name2}\nThe odds are ${tile}%`,
             mentions: [{
           tag: `${name2}`,
           id: id2
