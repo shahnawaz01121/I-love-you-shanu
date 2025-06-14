@@ -18,7 +18,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	if(react.includes("BIrthday") ||
      react.includes("Birthday") || react.includes("BirthDAy") || react.includes("BirTHday") ||
 react.includes("Birthday") ||
-react.includes("birthdaY")) {
+react.includes("birthday")) {
 		var msg = {
 				body: `★━━━━━━━━━━━━━★🎈𝐇𝐚𝐩𝐩𝐲 𝐛𝐢𝐫𝐭𝐡𝐝𝐚𝐲 𝐦𝐞𝐫𝐢 𝐣𝐚𝐚𝐧🎈★━━━━━━━━━━━━━★`,attachment: fs.createReadStream(__dirname + `/noprefix/happy.jpg`)
 			}
