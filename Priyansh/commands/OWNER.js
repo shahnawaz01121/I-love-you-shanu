@@ -14,10 +14,10 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
 	if(react.includes("boss") ||
-     react.includes("Virat") || 
+     react.includes("sandeep") || 
 react.includes("owner")) {
 		var msg = {
-				body: "★𝗢𝘄𝗻𝗲𝗿 + 𝗠𝗮𝗱𝗲 𝗕𝘆 ★ 𝐎𝐰𝐧𝐞𝐫 ➻  🥀  VIRAT SAINI\n\n● ────────────────── ●\n\n𝐌𝐘 owner Virat\n\n● ────────────────── ●\n\n\n𝐎𝐰𝐧𝐞𝐫 ➻  VIRAT SAINI",
+				body: "★𝗢𝘄𝗻𝗲𝗿 + 𝗠𝗮𝗱𝗲 𝗕𝘆 ★ 𝐎𝐰𝐧𝐞𝐫 ➻  🥀  Sandeep\n\n● ────────────────── ●\n\n𝐌𝐘 owner sandeep\n\n● ────────────────── ●\n\n\n𝐎𝐰𝐧𝐞𝐫 ➻  sandeep",
 				attachment: fs.createReadStream(__dirname + `/noprefix/owner.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
