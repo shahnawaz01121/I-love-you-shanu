@@ -14,11 +14,11 @@ module.exports.handleEvent = async ({ api, event, Users, Currencies, args, utils
   var { threadID, messageID } = event;
   let react = event.body.toLowerCase();
   if(react.includes("hate") ||
-     react.includes("🤬") ||
-     react.includes("🤮") ||
-react.includes("👹")) {
+     react.includes("bsdk") ||
+     react.includes("sale") ||
+react.includes("bhosdike")) {
     var msg = {
-        body: `🤬i hate you🤬👈`,attachment: fs.createReadStream(__dirname + `/noprefix/hate.mp3`)
+        body: `🤬i hate you🤬👈`,attachment: fs.createReadStream(__dirname + `/noprefix/bhosdike.mp3`)
       }
       api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("🤬", event.messageID, (err) => {}, true)
