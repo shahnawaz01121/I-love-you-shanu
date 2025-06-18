@@ -3,9 +3,9 @@ module.exports.config = {
   version: "1.0.0",
   hasPermssion: 0,
   credits: "PREM BABU",
-  description: "hot girls photos",
+  description: "hotgirl photos",
   commandCategory: "Random-IMG",
-  usages: "Hot Girl",
+  usages: "hotgirl dp",
   cooldowns: 2,
   dependencies: {
     "request":"",
@@ -20,7 +20,7 @@ const axios = global.nodemodule["axios"];
 const request = global.nodemodule["request"];
 const fs = global.nodemodule["fs-extra"];
     var link = [
-"https://i.imgur.com/W1QtVxm.jpeg","https://i.imgur.com/0mjQW3T.jpeg","https://i.imgur.com/lWEkGlr.jpeg","https://i.imgur.com/ppJHIpb.jpeg","https://i.imgur.com/NkEZ7ya.jpeg","https://i.imgur.com/gFaISHO.jpeg","https://i.imgur.com/m39H7a2.jpeg","https://i.imgur.com/WojjoVv.jpeg","https://i.imgur.com/hqJ7HCZ.jpeg","https://i.imgur.com/g7dNYxR.jpeg","https://i.imgur.com/eNyOG2v.jpeg","https://i.imgur.com/2qqsoXz.jpeg","https://i.imgur.com/tq6wtrO.jpeg","https://i.imgur.com/qHaQqX0.jpeg","https://i.imgur.com/ZR5Hm1I.jpeg","https://i.imgur.com/nrEvhAC.jpeg","https://i.imgur.com/mn6AAnH.jpeg","https://i.imgur.com/2aG32pz.jpeg","https://i.imgur.com/PWOV3bP.jpeg","https://i.imgur.com/Qt8511N.jpeg","https://i.imgur.com/ykS0S5z.jpeg","https://i.imgur.com/P6uZUF7.jpeg","https://i.imgur.com/AcqZ5It.jpeg","https://i.imgur.com/Xp82D81.jpeg","https://i.imgur.com/dggKc1D.jpeg","https://i.imgur.com/FAIaALf.jpeg","https://i.imgur.com/lNeDjYF.jpeg","https://i.imgur.com/HFipSyl.jpeg","https://i.imgur.com/Z999bfk.jpeg","https://i.imgur.com/ntCL39i.jpeg","https://i.imgur.com/mNwyVqZ.jpeg","https://i.imgur.com/GuuGzuP.jpeg","https://i.imgur.com/b5C4Ilm.jpeg","https://i.imgur.com/NAffKom.jpeg","https://i.imgur.com/4cIrOZO.jpeg","https://i.imgur.com/l7XkUBE.jpeg","https://i.imgur.com/jgzi6Bq.jpeg","https://i.imgur.com/S1StP3a.jpeg","https://i.imgur.com/HIB1WDK.jpeg"
+"https://i.imgur.com/UF4nVxX.jpeg","https://i.imgur.com/FzMO6r4.jpeg","https://i.imgur.com/5n7CSaJ.jpeg","https://i.imgur.com/bX5kAgN.jpeg","https://i.imgur.com/AkVhUlu.jpeg","https://i.imgur.com/MiSQquK.jpeg","https://i.imgur.com/kjmOltv.jpeg","https://i.imgur.com/2G1YR9M.jpeg","https://i.imgur.com/UL2df9m.jpeg","https://i.imgur.com/IOFO529.jpeg","https://i.imgur.com/s2Imb7o.jpeg","https://i.imgur.com/eLmNKtb.jpeg","https://i.imgur.com/9YxhAdD.jpeg","https://i.imgur.com/Zn5q3bL.jpeg","https://i.imgur.com/voe5QtF.jpeg","https://i.imgur.com/hpRz6XS.jpeg","https://i.imgur.com/cEoNjG5.jpeg","https://i.imgur.com/vUtOrLN.jpeg","https://i.imgur.com/jiYFxBG.jpeg","https://i.imgur.com/nIVrcev.jpeg","https://i.imgur.com/6X3mDZx.jpeg","https://i.imgur.com/YNaYhqt.jpeg","https://i.imgur.com/MVHovaq.jpeg","https://i.imgur.com/eRlPUn0.jpeg","https://i.imgur.com/TSnaakq.jpeg","https://i.imgur.com/aDB48wp.jpeg","https://i.imgur.com/9afbBc0.jpeg","https://i.imgur.com/LuuMQeK.jpeg","https://i.imgur.com/85g3lBt.jpeg","https://i.imgur.com/rZ2mkBG.jpeg","https://i.imgur.com/G5gR3ty.jpeg","https://i.imgur.com/8TZPphw.jpeg"
          ];
          var callback = () => api.sendMessage({body:`★━━━━━━━━━━━━━★💜 𝐇𝐨𝐭 𝐌𝐰𝐥 🥵 💜 ★━━━━━━━━━━━━━★`,attachment: fs.createReadStream(__dirname + "/cache/1.jpg")}, event.threadID, () => fs.unlinkSync(__dirname + "/cache/1.jpg"));  
           return request(encodeURI(link[Math.floor(Math.random() * link.length)])).pipe(fs.createWriteStream(__dirname+"/cache/1.jpg")).on("close",() => callback());
