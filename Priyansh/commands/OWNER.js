@@ -14,10 +14,10 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
 	if(react.includes("boss") ||
-     react.includes("sandeep") || 
+     react.includes("virat") || 
 react.includes("owner")) {
 		var msg = {
-				body: "★━━━━━━━━━━━━━★ 𝐎𝐰𝐧𝐞𝐫 𝐅𝐞𝐜𝐞𝐛𝐨𝐨𝐤 𝐋𝐢𝐧𝐤 👉 https://www.facebook.com/terabaphu727",
+				body: "★━━━━━━━━━━━━━★",
 				attachment: fs.createReadStream(__dirname + `/noprefix/owner.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
