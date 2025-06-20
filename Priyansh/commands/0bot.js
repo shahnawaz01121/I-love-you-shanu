@@ -351,16 +351,13 @@ if ((event.body.toLowerCase() == "himmat he") || (event.body.toLowerCase() == "b
   if ((event.body.toLowerCase() == "🤨🤨") || (event.body.toLowerCase() == "😳😳") || (event.body.toLowerCase() == "😒😒") || (event.body.toLowerCase() == "😒😒😒") || (event.body.toLowerCase() == "😒😒😒😒😒")) {
      return api.sendMessage("ese na dekho kuch kuch hota hai babu🙈😘", threadID);
    };
-   mess = ""
-
+   mess = "{name}"
+  
   if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
     var msg = {
-
       body: `${name}, ${rand}`
     }
     return api.sendMessage(msg, threadID, messageID);
   };
 
 }
-
-module.exports.run = function({ api, event, client, __GLOBAL }) { }
