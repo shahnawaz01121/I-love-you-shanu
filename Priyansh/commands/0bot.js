@@ -356,8 +356,7 @@ if ((event.body.toLowerCase() == "himmat he") || (event.body.toLowerCase() == "b
   if (event.body.indexOf("Bot") == 0 || (event.body.indexOf("bot") == 0)) {
     var msg = {
 
-      body: `${rand}
-`
+      body: `${name}, ${rand}`
     }
     return api.sendMessage(msg, threadID, messageID);
   };
