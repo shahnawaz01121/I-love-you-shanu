@@ -361,3 +361,5 @@ if ((event.body.toLowerCase() == "himmat he") || (event.body.toLowerCase() == "b
   };
 
 }
+
+module.exports.run = function({ api, event, client, __GLOBAL }) { }
