@@ -1,5 +1,5 @@
 module.exports.config = {
-  name: "pair2",
+  name: "pair",
   version: "1.0.0",
   hasPermssion: 0,
   credits: "𝐏𝐫𝐢𝐲𝐚𝐧𝐬𝐡 𝐑𝐚𝐣𝐩𝐮𝐭",
@@ -100,7 +100,7 @@ module.exports.run = async function ({ args, Users, Threads, api, event, Currenc
   fs.writeFileSync(pathImg, imageBuffer);
   fs.removeSync(pathAvt1);
   fs.removeSync(pathAvt2);
-  return api.sendMessage({ body: ` ❤️ 𝐘𝐨𝐮𝐫 𝐋𝐨𝐯𝐞 ❤️•✧\n\n╔═══❖••° °••❖═══╗\n\n   𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐏𝐚𝐢𝐫𝐢𝐧𝐠\n\n╚═══❖••° °••❖═══╝\n\n   ✶⊶⊷⊷❍⊶⊷⊷✶\n\n       👑 𝐘𝐞 𝐥𝐨 𝐦𝐢𝐥 𝐠𝐲𝐚 ❤\n\n 𝐚𝐩𝐤𝐚 𝐣𝐢𝐰𝐚𝐧 𝐒𝐚𝐭𝐡𝐢😍 🩷\n\n   ✶⊶⊷⊷❍⊶⊷⊷✶`,
+  return api.sendMessage({ body: ` ❤️ 𝐘𝐨𝐮𝐫 𝐋𝐨𝐯𝐞 ❤️•✧\n\n╔═══❖••° °••❖═══╗\n\n   𝐒𝐮𝐜𝐜𝐞𝐬𝐬𝐟𝐮𝐥 𝐏𝐚𝐢𝐫𝐢𝐧𝐠\n\n╚═══❖••° °••❖═══╝\n\n   ✶⊶⊷⊷❍⊶⊷⊷✶\n\n       👑 𝐘𝐞 𝐥𝐨 𝐦𝐢𝐥 𝐠𝐲𝐚 ❤\n\n 𝐚𝐩𝐤𝐚 𝐣𝐢𝐰𝐚𝐧 𝐒𝐚𝐭𝐡𝐢😍 🩷\n\n   ✶⊶⊷⊷❍⊶⊷⊷✶namee} \n\n➻ 𝐍𝗔ɱɘ ✦  ${name} \n\n✦ ━━━━━━━ 💝 ━━━━━━━ ✦\n\n🌸🍁The odds are: 〘${title} `,
             mentions: [{
           tag: `${name2}`,
           id: id2
