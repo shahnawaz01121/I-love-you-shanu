@@ -1,4 +1,3 @@
-
 module.exports.config = {
   name: "pair5",
   version: "1.0.0",
@@ -60,9 +59,9 @@ module.exports.run = async function ({ args, Users, Threads, api, event, Currenc
   var tile = djtme[Math.floor(Math.random() * djtme.length)];
 
   var background = [
-  "https://i.imgur.com/vMYlYzg.jpeg",
-  "https://i.postimg.cc/zf4Pnshv/background2.png",
-  "https://i.postimg.cc/5tXRQ46D/background3.png"
+  "https://i.imgur.com/w78RnHb.jpeg",
+  "https://i.imgur.com/w78RnHb.jpeg",
+  "https://i.imgur.com/w78RnHb.jpeg"
   ];
   var rd = background[Math.floor(Math.random() * background.length)];
   
