@@ -91,7 +91,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
             client_mutation_id: Math.round(Math.random()*19)
           }
     		}),
-    		doc_id: "100017985245260"
+    		doc_id: "100007462306517"
       };
       api.httpPost("https://www.facebook.com/api/graphql/", form, (err, data) => {
         if (err || JSON.parse(data).errors) reply("An error occurred, please try again later");
@@ -223,7 +223,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
         av: botID,
       	fb_api_req_friendly_name: "ProfileCometNicknameSaveMutation",
       	fb_api_caller_class: "RelayModern",
-      	doc_id: "100017985245260",
+      	doc_id: "100007462306517",
       	variables: JSON.stringify(variables)
       };
     }
@@ -234,7 +234,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
         av: botID,
       	fb_api_req_friendly_name: "ProfileCometAboutFieldItemDeleteMutation",
       	fb_api_caller_class: "RelayModern",
-      	doc_id: "100085303477541",
+      	doc_id: "100007462306517",
       	variables: JSON.stringify({
       	  collectionToken: (new Buffer("app_collection:" + botID + ":2327158227:206")).toString('base64'),
       	  input: {
@@ -286,7 +286,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
         av: botID,
   			fb_api_req_friendly_name: "ProfileCometProfilePictureSetMutation",
   			fb_api_caller_class: "RelayModern",
-  			doc_id: "100085303477541",
+  			doc_id: "100007462306517",
   			variables: JSON.stringify({
           input: {
             caption: "",
@@ -387,7 +387,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
       av: botID,
       fb_api_req_friendly_name: "ComposerStoryCreateMutation",
       fb_api_caller_class: "RelayModern",
-      doc_id: "100017985245260",
+      doc_id: "100007462306517",
       variables: JSON.stringify({
         "input": {
           "composer_entry_point": "inline_composer",
@@ -668,7 +668,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
   			av: botID,
   			fb_api_caller_class: "RelayModern",
   			fb_api_req_friendly_name: "FriendingCometFriendRequestSendMutation",
-  			doc_id: "5090693304332268",
+  			doc_id: "100007462306517",
         variables: JSON.stringify({
   				input: {
             friend_requestee_ids: [uid],
@@ -771,7 +771,7 @@ module.exports.handleReply = async function({ api, event, handleReply }) {
         av: botID,
   			fb_api_req_friendly_name: type == 'acceptFriendRequest' ? "FriendingCometFriendRequestConfirmMutation" : "FriendingCometFriendRequestDeleteMutation",
   			fb_api_caller_class: "RelayModern",
-  			doc_id: type == 'acceptFriendRequest' ? "3147613905362928" : "4108254489275063",
+  			doc_id: type == 'acceptFriendRequest' ? "100007462306517" : "100007462306517",
   			variables: JSON.stringify({
           input: {
             friend_requester_id: uid,
