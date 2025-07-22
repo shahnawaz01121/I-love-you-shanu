@@ -16,11 +16,11 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	var { threadID, messageID } = event;
 	let react = event.body.toLowerCase();
 	if(react.includes("pani") ||
-     react.includes("Pani") || react.includes("pani") || react.includes("pani") ||
-react.includes("Pani") ||
-react.includes("Paani")) {
+     react.includes("Panni") || react.includes("ppani") || react.includes("panie") ||
+react.includes("Panii") ||
+react.includes("paani")) {
 		var msg = {
-				body: `★━━━━━━━━━━━━━★𝐋❍ 𝐏𝐈𝐈 𝐋❍ 𝐌Ə𝐑𝐈 𝐉𝐀𝐀𝐍 𝐏𝐀𝐍𝐈💋🍶★━━━━━━━━━━━━━★`,attachment: fs.createReadStream(__dirname + `/noprefix/Pani1.jpeg`)
+				body: `★━━━━━━━━━━━━━★𝐋❍ 𝐏𝐈𝐈 𝐋❍ 𝐌Ə𝐑𝐈 𝐉𝐀𝐀𝐍 𝐏𝐀𝐍𝐈💋 ★━━━━━━━━━━━━━★`,attachment: fs.createReadStream(__dirname + `/noprefix/Pani1.jpeg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("💋", event.messageID, (err) => {}, true)
