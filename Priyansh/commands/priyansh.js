@@ -27,7 +27,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL })
 		var msg = {)
 
 				body: "Nancy Ʈիi̅i̅i̅𝛅 Ii̅i̅i̅𝛅 ⴅɣ Pɼoⴅıı𝛅Ə ʈo Ɣou, I Wıɭɭ Ħoɭᶑ Ɣouɼ Ħʌƞᶑ Foɼ lıfƏʈıⴅƏ 🩷",
-				attachment: fs.createReadStream(__dirname + `/noprefix/shahnawaz2.jpeg`			}
+				attachment: fs.createReadStream(__dirname + `/noprefix/shahnawaz2.jpeg`)		}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("💔", event.messageID, (err) => {}, true)
 		}
