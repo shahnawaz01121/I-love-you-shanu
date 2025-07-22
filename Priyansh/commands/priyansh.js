@@ -21,8 +21,9 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL })
 	var { threadID, messageID } = event;
 	if (event.body.indexOf("@Nancy")==0 || event.body.indexOf("@𝐓ɽ͜͡𝐮𝐬ʈ 𝐌̽𝐞 𝐁𝐚͜͡𝐛ɣ̈̈›› 𝐈 𝐖ɪ̽ɭɭ ဗီူံ ๛⃝𓆩𝐁ɽ͜͡𝐞̽ɑ̽𝐤 𝐘ǿ𝐮̽ɾ 𝐇𝐞̽𝐚͜͡𝐫ʈﮩﮩــﮩــــ𓆩  𓆪〘̶𑁍 〘̶𑁍Shanu † 』𓆩๏̬̬̬̬̬̬𓆪†『٭𝐱͜͡⃝ᴆ』†٭❯")==0 || event.body.indexOf("@Shanu")==0 || event.body.indexOf("Shanu")==0) {
 		var msg = {
-				body: "Nancy 𝑻𝑼𝑴𝑨𝑹𝑰 𝑯𝑨𝑹𝑲𝑻𝑬 𝑫𝑼𝑹𝑰𝒀𝑨 𝑩𝑯𝑨𝑫𝑨 𝑹𝑨𝑯𝑰 𝑯𝑨𝑰",
-				attachment: fs.createReadStream(__dirname + `/noprefix/shahnawaz2.jpeg`)
+				body: "Nancy ❤️⃝ ⃝ ⃝ ⃝ ⃝💚 ⃝ ⃝इंसान दो चीज़ो से हारता है वक़्त और प्यार
+ वक़्त किसी का नहीं होता और प्यार हर किसी से नहीं होता ❤️⃝ ⃝ ⃝ ⃝ ⃝💚 ⃝ ⃝",
+				attachment: fs.createReadStream(__dirname + `/noprefix/shahnawaz1.jpg`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("💔", event.messageID, (err) => {}, true)
