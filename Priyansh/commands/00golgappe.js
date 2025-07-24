@@ -20,7 +20,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 react.includes("Golgape") ||
 react.includes("golgappE")) {
 		var msg = {
-				body: `★━━━━━━━━━━━━━★𝐊𝐡𝐚 𝐋𝐨 𝐌𝐞𝐫𝐢 𝐉𝐚𝐚𝐧😋 𝐒𝐇𝐀𝐍𝗨 𝐏𝐀𝐈𝐒𝐀 ƊƏ ƊƏƊ𝐀🩷 ★━━━━━━━━━━━━━★`,attachment: fs.createReadStream(__dirname + `/noprefix/golgappe1.mp4`)
+				body: `★━━━━━━━━━━━━━★   𝐊𝐡𝐚 𝐋𝐨 𝐌𝐞𝐫𝐢 𝐉𝐚𝐚𝐧😋😋  𝐒𝐇𝐀𝐍𝗨 𝐏𝐀𝐈𝐒𝐀 ƊƏ ƊƏƊ𝐀🩷💸 ★━━━━━━━━━━━━━★`,attachment: fs.createReadStream(__dirname + `/noprefix/golgappe1.mp4`)
 			}
 			api.sendMessage(msg, threadID, messageID);
     api.setMessageReaction("💋", event.messageID, (err) => {}, true)
