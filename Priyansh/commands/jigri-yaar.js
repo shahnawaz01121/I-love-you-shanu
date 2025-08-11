@@ -18,7 +18,7 @@ module.exports.handleEvent = function({ api, event, client, __GLOBAL }) {
 	if(react.includes("yaari") ||
      react.includes("Jigrii") || react.includes("jigri") || react.includes("jaani") ||
 react.includes("Jaani") ||
-react.includes("bhai")) {
+react.includes("brother")) {
 		var msg = {
 				body: `★━━━━━━━━━━━━━★ 𝐉𝐈𝗚𝐑𝐈 Ɣ𝐀𝐀𝐑 Ҡ𝐀 𝗚𝐑❍𝗨𝐏 𝐇𝐀𝐈 ┼Ə𝐑𝐈 ┼❍ 𝐌𝐀𝐉Ə 𝐌𝐀𝐉Ə😂🩷😆 ★━━━━━━━━━━━━━★`,attachment: fs.createReadStream(__dirname + `/noprefix/jigri.mp4`)
 			}
