@@ -2,7 +2,7 @@ const axios = require("axios");
 
 module.exports.config = {
   name: "dolly",
-  version: "2.0.2",
+  version: "1.0.0",
   hasPermssion: 0,
   credits: "Raj",
   description: "Naughty AI boyfriend vampire",
